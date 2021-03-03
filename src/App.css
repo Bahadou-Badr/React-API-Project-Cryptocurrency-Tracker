@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Asap', sans-serif;
+  background-color: #03071e;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.coin-app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin.search {
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coin-text {
+  margin-bottom: 39px;
+  text-align: center;
+}
+
+.coin-input {
+  padding-left: 16px;
+  width: 500px;
+  height: 40px;
+  border-radius: 2.5px;
+  border: none;
+  background-color: #f7f7ff;
+  color: #cc444b;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.coin-input::placeholder {
+  color: #000814;
 }
